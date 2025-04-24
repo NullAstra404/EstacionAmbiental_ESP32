@@ -9,7 +9,7 @@
 // =================== CONFIGURACIÓN ===================
 
 // ⚠️ Coloca tus datos aquí
-const char* ssid = "404- Not Found";
+const char* ssid = "Your SSID-XXX";
 const char* password = "pPgU7&6_#T_mz7k";
 
 // Datos de Telegram
