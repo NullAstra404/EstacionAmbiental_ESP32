@@ -10,11 +10,11 @@
 
 // ⚠️ Coloca tus datos aquí
 const char* ssid = "Your SSID-XXX";
-const char* password = "pPgU7&6_#T_mz7k";
+const char* password = "XXXXXXXXXXXX";
 
 // Datos de Telegram
-const char* botToken = "bot7776709398:AAGTzGOFI_FHhNahWdHz7pCrbLQo51lXqxQ";
-const char* chatId = "8075889939";
+const char* botToken = "botxxxxxxxxxx:XXXXXXXXX_XXXXXXXXXXXXXXXXXXXXXXXXX";
+const char* chatId = "XXXXXXXXXX";
 
 // Umbrales
 #define UMBRAL_TEMP 29.0
@@ -162,7 +162,7 @@ void setup() {
 
   xTaskCreatePinnedToCore(TareaLecturaSensor, "LecturaSensor", 2048, NULL, 1, NULL, 1);
   xTaskCreatePinnedToCore(TareaActualizarPantalla, "ActualizarOLED", 2048, NULL, 1, NULL, 1);
-  xTaskCreatePinnedToCore(TareaAlertaTelegram, "AlertaTelegram", 4096, NULL, 1, NULL, 1);
+  xTaskCreatePinnedToCore(TareaAlertaTelegram, "AlertaTelegram", 4096, NULL, 1, NULL, 0);
 }
 
 void loop() {
